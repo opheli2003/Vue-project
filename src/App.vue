@@ -10,16 +10,17 @@
   <!-- <ninjas></ninjas> -->
   <div>
     <app-header></app-header>
+    <app-ninjas></app-ninjas>
+
     <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-  // import Ninjas from './Ninjas.vue'
-  import Footer from './components/Footer.vue'
-
-
+import Header from "./components/Header.vue";
+// import Ninjas from './Ninjas.vue'
+import Footer from "./components/Footer.vue";
+import Ninjas from "./components/Ninjas.vue";
 
 // We export an object
 // data is a function
@@ -27,9 +28,10 @@ import Header from './components/Header.vue'
 //we register our components here
 export default {
   components: {
-        "app-header": Header,
-        "app-footer": Footer
-        },
+    "app-header": Header,
+    "app-footer": Footer,
+    "app-ninjas": Ninjas
+  },
 
   // To nest a component locally
   // =>only in one file
@@ -38,22 +40,17 @@ export default {
   //   'ninjas':Ninjas
   // },
 
-
   data() {
-    return {
-
-
-      }
-      // title:'Ninja App'
-
-    }
+    return {};
+    // title:'Ninja App'
   }
-  // methods:{
-  //   greeting:function(){
-  //     return'hey'
-  //   }
+};
+// methods:{
+//   greeting:function(){
+//     return'hey'
+//   }
 
-  // }
+// }
 </script>
 
 <style>
